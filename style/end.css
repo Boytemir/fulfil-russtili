@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1440px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background: #FFF;
+    overflow: hidden;
+    padding-right: 95px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
+
+.box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 31px;
+    padding-left: 95px;
+
+}
+
+.box-left__vector {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+}
+
+.box-left__vector img {
+    width: 120px;
+    height: 120px;
+}
+
+.box-left__vector h1 {
+    color: #000;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58.5px;
+}
+
+.box-left__vector h1 span {
+    display: block;
+    color: #7019FF;
+}
+
+.box-left p {
+    width: 498px;
+    color: var(--text-color-black);
+    font-family: var(--poppins);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btn__telgram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 493px;
+    height: 74px;
+    flex-shrink: 0;
+    gap: 13px;
+    text-decoration: none;
+    background: #0E94D0;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+}
+
+.btn__telgram-text {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.btn__telgram:hover {
+    border-color: #0E94D0;
+    background-color: transparent;
+}
+
+.btn__telgram:hover  .btn__telgram-text {
+    color: #0E94D0;
+}
+
+.box-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.box-right img {
+    width: 624.07px;
+    height: 625px;
+    flex-shrink: 0;
+}
+
+
+
+
+
+@media screen and (max-width: 1260px) {
+    .box-left {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding: 45px 0 0 0;
+        height: auto;
+
+    }
+    .box-left {
+        padding: 45px 18px 0 18px;
+    }
+
+    .box-left__vector {
+        justify-content: center;
+    }
+
+    .box-left p {
+        width: 100%;
+    }
+
+    .btn__telgram {
+        width: 100%;
+    }
+
+    .box-right {
+        margin-left: 0px;
+        margin-top: 81px;
+        padding-right: 0;
+        padding: 0 20px;
+    }
+
+    .box-right img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .box-right__bg-img {
+        top: auto;
+        right: -150px;
+        bottom: -60px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .box-right__bg-img {
+        top: auto;
+        right: -150px;
+        bottom: -120px;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .box-left {
+        gap: 24px;
+    }
+    .box-left__vector {
+        gap: 18px;
+    }
+    .box-left__vector img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .box-left__vector h1 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28.08px;
+    }
+    .box-left p {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+}
+

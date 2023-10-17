@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.text-color {
+     color: #7019FF;
+}
+
+.box-left {
+   padding-left: 90px;
+   padding-top: 108px;
+    
+}
+
+.box-left__header {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+
+.box-left__header-chas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    border-radius: 50px;
+    background: #7019FF;
+    padding: 9px 21px 10px 22px;
+}
+
+.box-left__header-chas span, .box-left__header-chas p {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.box-left__header-chas div {
+    width: 1px;
+    height: 21px;
+    background: rgba(255, 255, 255, 0.20);
+}
+
+.box-left__header-FI {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-left__header-FI h4 {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.box-left__header-FI p {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -6px;
+}
+
+.box-left h2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    margin-top: 40px;
+}
+
+.box-left__hero {
+    margin-top: 40px;
+}
+
+.box-left__hero h3{
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.box-left__hero-info {
+    width: 515px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.box-left__hero-info__card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: self-start;
+    gap: 18px;
+}
+
+.box-left__hero-info__card img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.box-left__hero-info__card p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.2px;
+}
+
+.btn {
+    display: flex;
+    width: 499px;
+    height: 91px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: #EF0978;
+    box-sizing: border-box;   
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    margin-top: 40px;
+      
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    transition: all 0.4s ease;
+}
+
+.btn:hover {
+    border-color: #EF0978;
+    color: #EF0978;
+    background-color: transparent;
+}
+
+.box-right {
+    position: relative;
+}
+
+.img__mob {
+    display: none;
+    width: 100%;
+}
+
+.box-right__FI {
+    width: 337.741px;
+    height: 96.15px;
+    transform: rotate(8deg);
+    flex-shrink: 0;
+    position: absolute;
+    left: -50px;
+    bottom: 70px;
+    border-radius: 48px;
+    background: #7019FF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-right__FI h2 {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.box-right__FI p {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -6px;
+}
+
+/* SIGN UP START */
+.sign-up {
+    display: none; 
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(56, 46, 74, 0.50);
+    opacity: 1;
+}
+
+.sign-up.active {
+    display: block;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.sign-up .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sign-up__box {
+    width: 508px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    border-radius: 18px;
+    background: #FFF;
+    position: relative;
+    padding: 40px;
+}
+
+.sign-up__box h2 {
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 39.6px;
+}
+
+.sign-up__box h2 span {
+    color: #7019FF;
+}
+
+.sign-up__box p {
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.76px ;
+    margin-top: 12px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.form__input-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__input-card label {
+    color: #48635B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.12px;
+}
+
+.form__input-card input {
+    width: 100%;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid #BED4DA;
+    background: #F3F7F8;
+    outline: none;
+    padding: 13px 18px;
+
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.12px;
+}
+
+.form__input-card input::placeholder {
+    color: #BFD2CC;
+}
+
+.sign-up__btn {
+    width: 100%;
+    height: 54px;
+    flex-shrink: 0;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background: #EF0978;
+    outline: none;
+    cursor: pointer;
+
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23.76px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin-top: 24px;
+}
+
+.sign-up__btn:hover {
+    border-color: #EF0978;
+    color: #EF0978;
+    background-color: transparent;
+}
+
+.x {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1650px) {
+    .container {
+        width: 1650px;
+    }
+}
+
+
+@media screen and (max-width: 1360px) {
+    .box-right img{
+        width: 666px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .box-left{
+       padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1233px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .box-left {
+        padding: 0 50px;
+        padding-top: 108px;
+    }
+
+    .box-left__header {
+        justify-content: space-between;
+    }
+
+    .box-left__hero-info {
+        width: auto;
+    }
+
+
+    .box-right {
+        width: 100%;
+    }
+
+    .box-right img{
+        width: 100%;
+    }
+    
+    .img__mob {
+        display: block;
+        width: 100%;
+    }
+    .img__kom {
+        display: none;
+    }
+
+    .box-right__FI {
+        left: 10px;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .box-left {
+        padding: 0 11px;
+        padding-top: 30px;
+    }
+
+    .box-left__header {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .box-left__header-chas span, .box-left__header-chas p {
+        font-size: 16px;
+    }
+
+    .box-left__header-FI h4 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .box-left__header-FI p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .box-left h2 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .box-left__hero {
+        margin-top: 30px;
+    }
+
+    .box-left__hero h3{
+        font-size: 18px;
+        line-height: 22.5px;
+        text-align: center;
+    }
+
+    .box-left__hero-info {
+        gap: 18px;
+        margin-top: 20px;
+    }
+
+    .box-left__hero-info__card img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .box-left__hero-info__card p {
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+
+
+    .btn {
+        width: 100%;
+        height: 76px;
+        margin-top: 30px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .box-right {
+        margin-top: 10px;
+    }
+
+    .box-right__FI {
+        width: 219.446px;
+        height: 61.066px;
+        transform: rotate(8deg);
+        flex-shrink: 0;
+    }
+
+    .box-right__FI h2 {
+        font-size: 18px;
+    }
+    
+    .box-right__FI p {
+        font-size: 12px;
+        margin-top: 0px;
+    }
+
+    .sign-up .container {
+        padding: 14px;
+    }
+
+    .sign-up__box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .sign-up__box h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26.4px;
+    }
+    
+    .form__input-card label  {
+        font-size: 14px;
+        line-height: 18.48px;
+    }
+}
